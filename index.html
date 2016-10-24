@@ -166,13 +166,20 @@ standard Unix&#8217;s zless/zgrep commands.</p>
 
 <span class="kn">from</span> <span class="nn">monty.collections</span> <span class="k">import</span> <span class="n">frozendict</span>
 <span class="n">d</span> <span class="o">=</span> <span class="n">frozendict</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># A Fabric-inspired cd context, that allows one to change directory to</span>
+<span class="c1"># execute code and transparently changes back to the current working</span>
+<span class="c1"># directory</span>
+
+<span class="kn">from</span> <span class="nn">monty.os</span> <span class="k">import</span> <span class="n">cd</span>
+
+<span class="k">with</span> <span class="n">cd</span><span class="p">(</span><span class="s2">&quot;/path/to/input_files&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">execute_code_using_files</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
 <div class="section" id="api-docs">
-<h2>API docs<a class="headerlink" href="#api-docs" title="Permalink to this headline">¶</a></h2>
-<p>The API docs are given below. The docs for most classes or methods are clear
-enough for usage. Where there is somewhat greater subtlety in the usage,
-examples are provided.</p>
+<h1>API docs<a class="headerlink" href="#api-docs" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="monty.html">monty package</a><ul>
@@ -213,7 +220,6 @@ examples are provided.</p>
 </ul>
 </li>
 </ul>
-</div>
 </div>
 </div>
 <div class="section" id="contributing">
@@ -276,10 +282,8 @@ follows:</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#installing-monty">Installing monty</a></li>
-<li><a class="reference internal" href="#usage">Usage</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
 <li><a class="reference internal" href="#api-docs">API docs</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#contributing">Contributing</a></li>
 <li><a class="reference internal" href="#license">License</a></li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>

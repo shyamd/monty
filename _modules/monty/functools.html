@@ -138,7 +138,9 @@
 
 
 <div class="viewcode-block" id="lru_cache"><a class="viewcode-back" href="../../monty.html#monty.functools.lru_cache">[docs]</a><span class="k">def</span> <span class="nf">lru_cache</span><span class="p">(</span><span class="n">maxsize</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">typed</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Least-recently-used cache decorator.</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Least-recently-used cache decorator, which is a backport of the same</span>
+<span class="sd">    function in Python &gt;= 3.2.</span>
 
 <span class="sd">    If *maxsize* is set to None, the LRU features are disabled and the cache</span>
 <span class="sd">    can grow without bound.</span>
@@ -154,7 +156,6 @@
 <span class="sd">    Access the underlying function with f.__wrapped__.</span>
 
 <span class="sd">    See:  http://en.wikipedia.org/wiki/Cache_algorithms#Least_Recently_Used</span>
-
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="c1"># Users should only access the lru_cache through its public API:</span>

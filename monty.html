@@ -384,7 +384,7 @@ someone attempts to call the use_scipy function:</p>
 
 <span class="nd">@requires</span><span class="p">(</span><span class="n">scipy</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;scipy is not present.&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">use_scipy</span><span class="p">():</span>
-    <span class="nb">print</span> <span class="n">scipy</span><span class="o">.</span><span class="n">majver</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">majver</span><span class="p">)</span>
 </pre></div>
 </div>
 <table class="docutils field-list" frame="void" rules="none">
@@ -536,7 +536,8 @@ may however have a contract where invalidation is appropriate.</p>
 <dl class="function">
 <dt id="monty.functools.lru_cache">
 <code class="descname">lru_cache</code><span class="sig-paren">(</span><em>maxsize=128</em>, <em>typed=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/functools.html#lru_cache"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.functools.lru_cache" title="Permalink to this definition">¶</a></dt>
-<dd><p>Least-recently-used cache decorator.</p>
+<dd><p>Least-recently-used cache decorator, which is a backport of the same
+function in Python &gt;= 3.2.</p>
 <p>If <em>maxsize</em> is set to None, the LRU features are disabled and the cache
 can grow without bound.</p>
 <p>If <em>typed</em> is True, arguments of different types will be cached separately.
@@ -983,11 +984,11 @@ found, the decoder will generate a Pymatgen as a priority.  If that fails,
 the original decoded dictionary from the string is returned. Note that
 nested lists and dicts containing pymatgen object will be decoded correctly
 as well.</p>
-<dl class="docutils">
-<dt>Usage:</dt>
-<dd>Add it as a <em>cls</em> keyword when using json.load
-json.loads(json_string, cls=MontyDecoder)</dd>
-</dl>
+<p>Usage:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Add</span> <span class="n">it</span> <span class="k">as</span> <span class="n">a</span> <span class="o">*</span><span class="n">cls</span><span class="o">*</span> <span class="n">keyword</span> <span class="n">when</span> <span class="n">using</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span>
+<span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json_string</span><span class="p">,</span> <span class="n">cls</span><span class="o">=</span><span class="n">MontyDecoder</span><span class="p">)</span>
+</pre></div>
+</div>
 <p><code class="docutils literal"><span class="pre">object_hook</span></code>, if specified, will be called with the result
 of every JSON object decoded and its return value will be used in
 place of the given <code class="docutils literal"><span class="pre">dict</span></code>.  This can be used to provide custom
@@ -1035,12 +1036,12 @@ pymatgen objects.</p>
 <em class="property">class </em><code class="descname">MontyEncoder</code><span class="sig-paren">(</span><em>skipkeys=False</em>, <em>ensure_ascii=True</em>, <em>check_circular=True</em>, <em>allow_nan=True</em>, <em>sort_keys=False</em>, <em>indent=None</em>, <em>separators=None</em>, <em>default=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/json.html#MontyEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.json.MontyEncoder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">json.encoder.JSONEncoder</span></code></p>
 <p>A Json Encoder which supports the MSONable API, plus adds support for
-numpy arrays and</p>
-<dl class="docutils">
-<dt>Usage:</dt>
-<dd>Add it as a <em>cls</em> keyword when using json.dump
-json.dumps(object, cls=MontyEncoder)</dd>
-</dl>
+numpy arrays, datetime objects, bson ObjectIds (requires bson).</p>
+<p>Usage:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Add</span> <span class="n">it</span> <span class="k">as</span> <span class="n">a</span> <span class="o">*</span><span class="n">cls</span><span class="o">*</span> <span class="n">keyword</span> <span class="n">when</span> <span class="n">using</span> <span class="n">json</span><span class="o">.</span><span class="n">dump</span>
+<span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">cls</span><span class="o">=</span><span class="n">MontyEncoder</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>Constructor for JSONEncoder, with sensible defaults.</p>
 <p>If skipkeys is false, then it is a TypeError to attempt
 encoding of keys that are not str, int, float or None.  If

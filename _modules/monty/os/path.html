@@ -57,7 +57,11 @@
           <div class="body" role="main">
             
   <h1>Source code for monty.os.path</h1><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">absolute_import</span>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">absolute_import</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
 
 <span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;Shyue Ping Ong&#39;</span>
 <span class="n">__copyright__</span> <span class="o">=</span> <span class="s1">&#39;Copyright 2013, The Materials Project&#39;</span>
@@ -65,9 +69,6 @@
 <span class="n">__maintainer__</span> <span class="o">=</span> <span class="s1">&#39;Shyue Ping Ong&#39;</span>
 <span class="n">__email__</span> <span class="o">=</span> <span class="s1">&#39;ongsp@ucsd.edu&#39;</span>
 <span class="n">__date__</span> <span class="o">=</span> <span class="s1">&#39;1/24/14&#39;</span>
-
-
-<span class="kn">import</span> <span class="nn">os</span>
 
 
 <div class="viewcode-block" id="which"><a class="viewcode-back" href="../../../monty.os.html#monty.os.path.which">[docs]</a><span class="k">def</span> <span class="nf">which</span><span class="p">(</span><span class="n">cmd</span><span class="p">):</span>
@@ -119,19 +120,22 @@
     <span class="k">return</span> <span class="n">filename</span></div>
 
 
-<div class="viewcode-block" id="find_exts"><a class="viewcode-back" href="../../../monty.os.html#monty.os.path.find_exts">[docs]</a><span class="k">def</span> <span class="nf">find_exts</span><span class="p">(</span><span class="n">top</span><span class="p">,</span> <span class="n">exts</span><span class="p">,</span> <span class="n">exclude_dirs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">include_dirs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">match_mode</span><span class="o">=</span><span class="s2">&quot;basename&quot;</span><span class="p">):</span>
+<div class="viewcode-block" id="find_exts"><a class="viewcode-back" href="../../../monty.os.html#monty.os.path.find_exts">[docs]</a><span class="k">def</span> <span class="nf">find_exts</span><span class="p">(</span><span class="n">top</span><span class="p">,</span> <span class="n">exts</span><span class="p">,</span> <span class="n">exclude_dirs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">include_dirs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+              <span class="n">match_mode</span><span class="o">=</span><span class="s2">&quot;basename&quot;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Find all files with the extension listed in `exts` that are located within the directory tree</span>
-<span class="sd">    rooted at `top` (including top itself, but excluding &#39;.&#39; and &#39;..&#39;)</span>
+<span class="sd">    Find all files with the extension listed in `exts` that are located within</span>
+<span class="sd">    the directory tree rooted at `top` (including top itself, but excluding</span>
+<span class="sd">    &#39;.&#39; and &#39;..&#39;)</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        top (str): Root directory</span>
 <span class="sd">        exts (str or list of strings): List of extensions.</span>
-<span class="sd">        exclude_dirs (str): Wildcards used to exclude particular directories. Can be concatenated via `|`</span>
+<span class="sd">        exclude_dirs (str): Wildcards used to exclude particular directories.</span>
+<span class="sd">            Can be concatenated via `|`</span>
 <span class="sd">        include_dirs (str): Wildcards used to select particular directories.</span>
-<span class="sd">                            `include_dirs` and `exclude_dirs` are mutually exclusive</span>
+<span class="sd">            `include_dirs` and `exclude_dirs` are mutually exclusive</span>
 <span class="sd">        match_mode (str): &quot;basename&quot; if  match should be done on the basename.</span>
-<span class="sd">                          &quot;abspath&quot; for absolute path.</span>
+<span class="sd">            &quot;abspath&quot; for absolute path.</span>
 
 <span class="sd">    Returns:</span>
 <span class="sd">        (list of str): Absolute paths of the files.</span>
