@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>monty.os package &#8212; monty 0.9.6 documentation</title>
+    
+    <link rel="stylesheet" href="_static/proBlue.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9.6',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="monty 0.9.6 documentation" href="index.html" />
+    <link rel="up" title="monty package" href="monty.html" />
+    <link rel="prev" title="monty package" href="monty.html" />
+ 
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="monty.html" title="monty package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">monty 0.9.6 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="monty.html" accesskey="U">monty package</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="monty-os-package">
+<h1>monty.os package<a class="headerlink" href="#monty-os-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-monty.os.path">
+<span id="monty-os-path-module"></span><h2>monty.os.path module<a class="headerlink" href="#module-monty.os.path" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="monty.os.path.find_exts">
+<code class="descname">find_exts</code><span class="sig-paren">(</span><em>top</em>, <em>exts</em>, <em>exclude_dirs=None</em>, <em>include_dirs=None</em>, <em>match_mode='basename'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/os/path.html#find_exts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.os.path.find_exts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find all files with the extension listed in <cite>exts</cite> that are located within the directory tree
+rooted at <cite>top</cite> (including top itself, but excluding &#8216;.&#8217; and &#8216;..&#8217;)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>top</strong> (<em>str</em>) &#8211; Root directory</li>
+<li><strong>exts</strong> (<em>str or list of strings</em>) &#8211; List of extensions.</li>
+<li><strong>exclude_dirs</strong> (<em>str</em>) &#8211; Wildcards used to exclude particular directories. Can be concatenated via <cite>|</cite></li>
+<li><strong>include_dirs</strong> (<em>str</em>) &#8211; Wildcards used to select particular directories.
+<cite>include_dirs</cite> and <cite>exclude_dirs</cite> are mutually exclusive</li>
+<li><strong>match_mode</strong> (<em>str</em>) &#8211; &#8220;basename&#8221; if  match should be done on the basename.
+&#8220;abspath&#8221; for absolute path.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Absolute paths of the files.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">(list of str)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Find all pdf and ps files starting from the current directory.</span>
+<span class="n">find_exts</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;pdf&quot;</span><span class="p">,</span> <span class="s2">&quot;ps&quot;</span><span class="p">))</span>
+
+<span class="c1"># Find all pdf files, exclude hidden directories and dirs whose name</span>
+<span class="c1"># starts with `_`</span>
+<span class="n">find_exts</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="s2">&quot;pdf&quot;</span><span class="p">,</span> <span class="n">exclude_dirs</span><span class="o">=</span><span class="s2">&quot;_*|.*&quot;</span><span class="p">)</span>
+
+<span class="c1"># Find all ps files, in the directories whose basename starts with</span>
+<span class="c1"># output.</span>
+<span class="n">find_exts</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="s2">&quot;ps&quot;</span><span class="p">,</span> <span class="n">include_dirs</span><span class="o">=</span><span class="s2">&quot;output*&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.os.path.which">
+<code class="descname">which</code><span class="sig-paren">(</span><em>cmd</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/os/path.html#which"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.os.path.which" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns full path to a executable.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cmd</strong> (<em>str</em>) &#8211; Executable command to search for.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(str) Full path to command. None if it is not found.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">full_path_to_python</span> <span class="o">=</span> <span class="n">which</span><span class="p">(</span><span class="s2">&quot;python&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.os.path.zpath">
+<code class="descname">zpath</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/os/path.html#zpath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.os.path.zpath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an existing (zipped or unzipped) file path given the unzipped
+version. If no path exists, returns the filename unmodified.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> &#8211; filename without zip extension</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">filename with a zip extension (unless an unzipped version
+exists). If filename is not found, the same filename is returned
+unchanged.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.os">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-monty.os" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="monty.os.cd">
+<code class="descname">cd</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/os.html#cd"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.os.cd" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Fabric-inspired cd context that temporarily changes directory for
+performing some tasks, and returns to the original working directory
+afterwards. E.g.,</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>with cd(&#8220;/my/path/&#8221;):</dt>
+<dd>do_something()</dd>
+</dl>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> &#8211; Path to cd to.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.os.makedirs_p">
+<code class="descname">makedirs_p</code><span class="sig-paren">(</span><em>path</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/os.html#makedirs_p"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.os.makedirs_p" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper for os.makedirs that does not raise an exception if the directory already exists, in the fashion of
+&#8220;mkdir -p&#8221; command. The check is performed in a thread-safe way</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> &#8211; path of the directory to create</li>
+<li><strong>kwargs</strong> &#8211; standard kwargs for os.makedirs</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">monty.os package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-monty.os.path">monty.os.path module</a></li>
+<li><a class="reference internal" href="#module-monty.os">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="monty.html"
+                        title="previous chapter">monty package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/monty.os.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="monty.html" title="monty package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">monty 0.9.6 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="monty.html" >monty package</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014, Shyue Ping Ong.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,1942 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>monty package &#8212; monty 0.9.6 documentation</title>
+    
+    <link rel="stylesheet" href="_static/proBlue.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9.6',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="monty 0.9.6 documentation" href="index.html" />
+    <link rel="next" title="monty.os package" href="monty.os.html" />
+    <link rel="prev" title="Monty - The Missing Complement to Python" href="index.html" />
+ 
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="monty.os.html" title="monty.os package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Monty - The Missing Complement to Python"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">monty 0.9.6 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="monty-package">
+<h1>monty package<a class="headerlink" href="#monty-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="monty.os.html">monty.os package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="monty.os.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="monty.os.html#module-monty.os.path">monty.os.path module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="monty.os.html#module-monty.os">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-monty.bisect">
+<span id="monty-bisect-module"></span><h2>monty.bisect module<a class="headerlink" href="#module-monty.bisect" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="monty.bisect.find_ge">
+<code class="descname">find_ge</code><span class="sig-paren">(</span><em>a</em>, <em>x</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/bisect.html#find_ge"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.bisect.find_ge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find leftmost item greater than or equal to x.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.bisect.find_gt">
+<code class="descname">find_gt</code><span class="sig-paren">(</span><em>a</em>, <em>x</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/bisect.html#find_gt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.bisect.find_gt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find leftmost value greater than x.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.bisect.find_le">
+<code class="descname">find_le</code><span class="sig-paren">(</span><em>a</em>, <em>x</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/bisect.html#find_le"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.bisect.find_le" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find rightmost value less than or equal to x.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.bisect.find_lt">
+<code class="descname">find_lt</code><span class="sig-paren">(</span><em>a</em>, <em>x</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/bisect.html#find_lt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.bisect.find_lt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find rightmost value less than x.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.bisect.index">
+<code class="descname">index</code><span class="sig-paren">(</span><em>a</em>, <em>x</em>, <em>atol=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/bisect.html#index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.bisect.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locate the leftmost value exactly equal to x.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.collections">
+<span id="monty-collections-module"></span><h2>monty.collections module<a class="headerlink" href="#module-monty.collections" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="monty.collections.AttrDict">
+<em class="property">class </em><code class="descname">AttrDict</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/collections.html#AttrDict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.collections.AttrDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">dict</span></code></p>
+<p>Allows to access dict keys as obj.foo in addition
+to the traditional way obj[&#8216;foo&#8217;]&#8221;</p>
+<p class="rubric">Example</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">AttrDict</span><span class="p">(</span><span class="n">foo</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bar</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">d</span><span class="p">[</span><span class="s2">&quot;foo&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">d</span><span class="o">.</span><span class="n">foo</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">bar</span> <span class="o">=</span> <span class="s2">&quot;hello&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">d</span><span class="o">.</span><span class="n">bar</span> <span class="o">==</span> <span class="s2">&quot;hello&quot;</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="monty.collections.AttrDict.copy">
+<code class="descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/collections.html#AttrDict.copy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.collections.AttrDict.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="monty.collections.FrozenAttrDict">
+<em class="property">class </em><code class="descname">FrozenAttrDict</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/collections.html#FrozenAttrDict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.collections.FrozenAttrDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#monty.collections.frozendict" title="monty.collections.frozendict"><code class="xref py py-class docutils literal"><span class="pre">monty.collections.frozendict</span></code></a></p>
+<dl class="docutils">
+<dt>A dictionary that:</dt>
+<dd><ul class="first last simple">
+<li>does not permit changes.</li>
+<li>Allows to access dict keys as obj.foo in addition
+to the traditional way obj[&#8216;foo&#8217;]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="class">
+<dt id="monty.collections.MongoDict">
+<em class="property">class </em><code class="descname">MongoDict</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/collections.html#MongoDict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.collections.MongoDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>This dict-like object allows one to access the entries in a nested dict as attributes.
+Entries (attributes) cannot be modified. It also provides Ipython tab completion hence this object
+is particularly useful if you need to analyze a nested dict interactively (e.g. documents
+extracted from a MongoDB database).</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">MongoDict</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">m</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">b</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">m</span><span class="o">.</span><span class="n">x</span> <span class="o">==</span> <span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="s2">&quot;a&quot;</span> <span class="ow">in</span> <span class="n">m</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">a</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]</span>
+<span class="go">{&#39;b&#39;: 1}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Cannot inherit from ABC collections.Mapping because otherwise
+dict.keys and dict.items will pollute the namespace.
+e.g MongoDict({&#8220;keys&#8221;: 1}).keys would be the ABC dict method.</p>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="monty.collections.Namespace">
+<em class="property">class </em><code class="descname">Namespace</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/collections.html#Namespace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.collections.Namespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">dict</span></code></p>
+<p>A dictionary that does not permit to redefine its keys.</p>
+<dl class="method">
+<dt id="monty.collections.Namespace.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/collections.html#Namespace.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.collections.Namespace.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.collections.as_set">
+<code class="descname">as_set</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/collections.html#as_set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.collections.as_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert obj into a set, returns None if obj is None.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">as_set</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">as_set</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span> <span class="ow">and</span> <span class="n">as_set</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span> <span class="o">==</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.collections.dict2namedtuple">
+<code class="descname">dict2namedtuple</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/collections.html#dict2namedtuple"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.collections.dict2namedtuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper function to create a <code class="xref py py-class docutils literal"><span class="pre">namedtuple</span></code> from a dictionary.</p>
+<p class="rubric">Example</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">dict2namedtuple</span><span class="p">(</span><span class="n">foo</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bar</span><span class="o">=</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">t</span><span class="o">.</span><span class="n">foo</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">t</span><span class="o">.</span><span class="n">bar</span> <span class="o">==</span> <span class="s2">&quot;hello&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">dict2namedtuple</span><span class="p">([(</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;hello&quot;</span><span class="p">)])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">t</span><span class="o">.</span><span class="n">foo</span> <span class="ow">and</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">t</span><span class="o">.</span><span class="n">bar</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<ul class="last simple">
+<li>The order of the items in the namedtuple is not deterministic if kwargs are used.
+namedtuples, however, should always be accessed by attribute hence
+this behaviour should not represent a serious problem.</li>
+<li>Don&#8217;t use this function in code in which memory and performance are crucial
+since a dict is needed to instantiate the tuple!</li>
+</ul>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="monty.collections.frozendict">
+<em class="property">class </em><code class="descname">frozendict</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/collections.html#frozendict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.collections.frozendict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">dict</span></code></p>
+<p>A dictionary that does not permit changes. The naming
+violates PEP8 to be consistent with standard Python&#8217;s &#8220;frozenset&#8221; naming.</p>
+<dl class="method">
+<dt id="monty.collections.frozendict.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/collections.html#frozendict.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.collections.frozendict.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.collections.tree">
+<code class="descname">tree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/collections.html#tree"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.collections.tree" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tree object, which is effectively a recursive defaultdict that
+adds tree as members.</p>
+<dl class="docutils">
+<dt>Usage:</dt>
+<dd>x = tree()
+x[&#8216;a&#8217;][&#8216;b&#8217;][&#8216;c&#8217;] = 1</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A tree.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.design_patterns">
+<span id="monty-design-patterns-module"></span><h2>monty.design_patterns module<a class="headerlink" href="#module-monty.design_patterns" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="monty.design_patterns.NullFile">
+<em class="property">class </em><code class="descname">NullFile</code><a class="reference internal" href="_modules/monty/design_patterns.html#NullFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.design_patterns.NullFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>A file object that is associated to /dev/null.</p>
+<p>no-op</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="monty.design_patterns.NullStream">
+<em class="property">class </em><code class="descname">NullStream</code><a class="reference internal" href="_modules/monty/design_patterns.html#NullStream"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.design_patterns.NullStream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>A fake stream with a no-op write..</p>
+<dl class="method">
+<dt id="monty.design_patterns.NullStream.write">
+<code class="descname">write</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/design_patterns.html#NullStream.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.design_patterns.NullStream.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>no-op</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.design_patterns.cached_class">
+<code class="descname">cached_class</code><span class="sig-paren">(</span><em>klass</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/design_patterns.html#cached_class"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.design_patterns.cached_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator to cache class instances by constructor arguments.
+This results in a class that behaves like a singleton for each
+set of constructor arguments, ensuring efficiency.</p>
+<p>Note that this should be used for <em>immutable classes only</em>.  Having
+a cached mutable class makes very little sense.  For efficiency,
+avoid using this decorator for situations where there are many
+constructor arguments permutations.</p>
+<p>The keywords argument dictionary is converted to a tuple because
+dicts are mutable; keywords themselves are strings and
+so are always hashable, but if any arguments (keyword
+or positional) are non-hashable, that set of arguments
+is not cached.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.design_patterns.singleton">
+<code class="descname">singleton</code><span class="sig-paren">(</span><em>cls</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/design_patterns.html#singleton"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.design_patterns.singleton" title="Permalink to this definition">¶</a></dt>
+<dd><p>This decorator can be used to create a singleton out of a class.</p>
+<p>Usage:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@singleton</span>
+<span class="k">class</span> <span class="nc">MySingleton</span><span class="p">():</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">():</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.dev">
+<span id="monty-dev-module"></span><h2>monty.dev module<a class="headerlink" href="#module-monty.dev" title="Permalink to this headline">¶</a></h2>
+<p>This module implements several useful functions and decorators that can be
+particularly useful for developers. E.g., deprecating methods / classes, etc.</p>
+<dl class="function">
+<dt id="monty.dev.deprecated">
+<code class="descname">deprecated</code><span class="sig-paren">(</span><em>replacement=None</em>, <em>message=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/dev.html#deprecated"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.dev.deprecated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator to mark classes or functions as deprecated,
+with a possible replacement.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>replacement</strong> (<em>callable</em>) &#8211; A replacement class or method.</li>
+<li><strong>message</strong> (<em>str</em>) &#8211; A warning message to be displayed.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Original function, but with a warning to use the updated class.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.dev.get_ncpus">
+<code class="descname">get_ncpus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/dev.html#get_ncpus"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.dev.get_ncpus" title="Permalink to this definition">¶</a></dt>
+<dd><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you are using Python &gt;= 2.7, multiprocessing.cpu_count() already
+provides the number of CPUs. In fact, this is the first method tried.
+The purpose of this function is to cater to old Python versions that
+still exist on many Linux style clusters.</p>
+</div>
+<p>Number of virtual or physical CPUs on this system, i.e.
+user/real as output by time(1) when called with an optimally scaling
+userspace-only program. Return -1 if ncpus cannot be detected. Taken from:
+<a class="reference external" href="http://stackoverflow.com/questions/1006289/how-to-find-out-the-number-of">http://stackoverflow.com/questions/1006289/how-to-find-out-the-number-of</a>-
+cpus-in-python</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.dev.install_excepthook">
+<code class="descname">install_excepthook</code><span class="sig-paren">(</span><em>hook_type='color'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/dev.html#install_excepthook"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.dev.install_excepthook" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function replaces the original python traceback with an improved
+version from Ipython. Use <cite>color</cite> for colourful traceback formatting,
+<cite>verbose</cite> for Ka-Ping Yee&#8217;s &#8220;cgitb.py&#8221; version kwargs are the keyword
+arguments passed to the constructor. See IPython.core.ultratb.py for more
+info.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">0 if hook is installed successfully.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="monty.dev.requires">
+<em class="property">class </em><code class="descname">requires</code><span class="sig-paren">(</span><em>condition</em>, <em>message</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/dev.html#requires"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.dev.requires" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Decorator to mark classes or functions as requiring a specified condition
+to be true. This can be used to present useful error messages for
+optional dependencies. For example, decorating the following code will
+check if scipy is present and if not, a runtime error will be raised if
+someone attempts to call the use_scipy function:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">scipy</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="n">scipy</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="nd">@requires</span><span class="p">(</span><span class="n">scipy</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;scipy is not present.&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">use_scipy</span><span class="p">():</span>
+    <span class="nb">print</span> <span class="n">scipy</span><span class="o">.</span><span class="n">majver</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>condition</strong> &#8211; Condition necessary to use the class or function.</li>
+<li><strong>message</strong> &#8211; A message to be displayed if the condition is not True.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.fnmatch">
+<span id="monty-fnmatch-module"></span><h2>monty.fnmatch module<a class="headerlink" href="#module-monty.fnmatch" title="Permalink to this headline">¶</a></h2>
+<p>This module provides support for Unix shell-style wildcards</p>
+<dl class="class">
+<dt id="monty.fnmatch.WildCard">
+<em class="property">class </em><code class="descname">WildCard</code><span class="sig-paren">(</span><em>wildcard</em>, <em>sep='|'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/fnmatch.html#WildCard"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.fnmatch.WildCard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>This object provides an easy-to-use interface for filename matching with
+shell patterns (fnmatch).</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">w</span> <span class="o">=</span> <span class="n">WildCard</span><span class="p">(</span><span class="s2">&quot;*.nc|*.pdf&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">w</span><span class="o">.</span><span class="n">filter</span><span class="p">([</span><span class="s2">&quot;foo.nc&quot;</span><span class="p">,</span> <span class="s2">&quot;bar.pdf&quot;</span><span class="p">,</span> <span class="s2">&quot;hello.txt&quot;</span><span class="p">])</span>
+<span class="go">[&#39;foo.nc&#39;, &#39;bar.pdf&#39;]</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">w</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s2">&quot;foo.nc&quot;</span><span class="p">)</span>
+<span class="go">[&#39;foo.nc&#39;]</span>
+</pre></div>
+</div>
+<p>Initializes a WildCard.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>wildcard</strong> (<em>str</em>) &#8211; String of tokens separated by sep. Each token
+represents a pattern.</li>
+<li><strong>sep</strong> (<em>str</em>) &#8211; Separator for shell patterns.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="monty.fnmatch.WildCard.filter">
+<code class="descname">filter</code><span class="sig-paren">(</span><em>names</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/fnmatch.html#WildCard.filter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.fnmatch.WildCard.filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list with the names matching the pattern.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="monty.fnmatch.WildCard.match">
+<code class="descname">match</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/fnmatch.html#WildCard.match"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.fnmatch.WildCard.match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if name matches one of the patterns.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.fractions">
+<span id="monty-fractions-module"></span><h2>monty.fractions module<a class="headerlink" href="#module-monty.fractions" title="Permalink to this headline">¶</a></h2>
+<p>Math functions.</p>
+<dl class="function">
+<dt id="monty.fractions.gcd">
+<code class="descname">gcd</code><span class="sig-paren">(</span><em>*numbers</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/fractions.html#gcd"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.fractions.gcd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the greatest common divisor for a sequence of numbers.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>*numbers</strong> &#8211; Sequence of numbers.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(int) Greatest common divisor of numbers.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.fractions.gcd_float">
+<code class="descname">gcd_float</code><span class="sig-paren">(</span><em>numbers</em>, <em>tol=1e-08</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/fractions.html#gcd_float"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.fractions.gcd_float" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the greatest common divisor for a sequence of numbers.
+Uses a numerical tolerance, so can be used on floats</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>numbers</strong> &#8211; Sequence of numbers.</li>
+<li><strong>tol</strong> &#8211; Numerical tolerance</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(int) Greatest common divisor of numbers.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.fractions.lcm">
+<code class="descname">lcm</code><span class="sig-paren">(</span><em>*numbers</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/fractions.html#lcm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.fractions.lcm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return lowest common multiple of a sequence of numbers.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>*numbers</strong> &#8211; Sequence of numbers.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(int) Lowest common multiple of numbers.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.functools">
+<span id="monty-functools-module"></span><h2>monty.functools module<a class="headerlink" href="#module-monty.functools" title="Permalink to this headline">¶</a></h2>
+<p>functools, especially backported from Python 3.</p>
+<dl class="exception">
+<dt id="monty.functools.TimeoutError">
+<em class="property">exception </em><code class="descname">TimeoutError</code><span class="sig-paren">(</span><em>message</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/functools.html#TimeoutError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.functools.TimeoutError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">Exception</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="monty.functools.lazy_property">
+<em class="property">class </em><code class="descname">lazy_property</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/functools.html#lazy_property"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.functools.lazy_property" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>lazy_property descriptor</p>
+<p>Used as a decorator to create lazy attributes. Lazy attributes
+are evaluated on first use.</p>
+<dl class="classmethod">
+<dt id="monty.functools.lazy_property.invalidate">
+<em class="property">classmethod </em><code class="descname">invalidate</code><span class="sig-paren">(</span><em>inst</em>, <em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/functools.html#lazy_property.invalidate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.functools.lazy_property.invalidate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invalidate a lazy attribute.</p>
+<p>This obviously violates the lazy contract. A subclass of lazy
+may however have a contract where invalidation is appropriate.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.functools.lru_cache">
+<code class="descname">lru_cache</code><span class="sig-paren">(</span><em>maxsize=128</em>, <em>typed=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/functools.html#lru_cache"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.functools.lru_cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Least-recently-used cache decorator.</p>
+<p>If <em>maxsize</em> is set to None, the LRU features are disabled and the cache
+can grow without bound.</p>
+<p>If <em>typed</em> is True, arguments of different types will be cached separately.
+For example, f(3.0) and f(3) will be treated as distinct calls with
+distinct results.</p>
+<p>Arguments to the cached function must be hashable.</p>
+<p>View the cache statistics named tuple (hits, misses, maxsize, currsize)
+with f.cache_info().  Clear the cache and statistics with f.cache_clear().
+Access the underlying function with f.__wrapped__.</p>
+<p>See:  <a class="reference external" href="http://en.wikipedia.org/wiki/Cache_algorithms#Least_Recently_Used">http://en.wikipedia.org/wiki/Cache_algorithms#Least_Recently_Used</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.functools.prof_main">
+<code class="descname">prof_main</code><span class="sig-paren">(</span><em>main</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/functools.html#prof_main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.functools.prof_main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for profiling main programs.</p>
+<p>Profiling is activated by prepending the command line options
+supported by the original main program with the keyword <cite>prof</cite>.
+.. rubric:: Example</p>
+<p>$ script.py arg &#8211;foo=1</p>
+<p>becomes</p>
+<blockquote>
+<div>$ script.py prof arg &#8211;foo=1</div></blockquote>
+<p>The decorated main accepts two new arguments:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>prof_file: Name of the output file with profiling data</dt>
+<dd>If not given, a temporary file is created.</dd>
+<dt>sortby: Profiling data are sorted according to this value.</dt>
+<dd>default is &#8220;time&#8221;. See sort_stats.</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.functools.return_if_raise">
+<code class="descname">return_if_raise</code><span class="sig-paren">(</span><em>exception_tuple</em>, <em>retval_if_exc</em>, <em>disabled=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/functools.html#return_if_raise"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.functools.return_if_raise" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for functions, methods or properties. Execute the callable in a
+try block, and return retval_if_exc if one of the exceptions listed in
+exception_tuple is raised (se also <code class="docutils literal"><span class="pre">return_node_if_raise</span></code>).</p>
+<p>Setting disabled to True disables the try except block (useful for
+debugging purposes). One can use this decorator to define properties.</p>
+<p>Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@return_if_raise</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">return_none_if_value_error</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="nd">@return_if_raise</span><span class="p">((</span><span class="ne">ValueError</span><span class="p">,</span> <span class="ne">KeyError</span><span class="p">),</span> <span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">another_method</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="nd">@property</span>
+<span class="nd">@return_if_raise</span><span class="p">(</span><span class="ne">AttributeError</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="s2">&quot;Name of the object, None if not set.&quot;</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="monty.functools.return_none_if_raise">
+<code class="descname">return_none_if_raise</code><em class="property"> = functools.partial(&lt;function return_if_raise&gt;, retval_if_exc=None)</em><a class="headerlink" href="#monty.functools.return_none_if_raise" title="Permalink to this definition">¶</a></dt>
+<dd><p>This decorator returns None if one of the exceptions is raised.</p>
+<p>&#64;return_none_if_raise(ValueError)
+def method(self):</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="monty.functools.timeout">
+<em class="property">class </em><code class="descname">timeout</code><span class="sig-paren">(</span><em>seconds=1</em>, <em>error_message='Timeout'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/functools.html#timeout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.functools.timeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Timeout function. Use to limit matching to a certain time limit. Note that
+this works only on Unix-based systems as it uses signal. Usage:</p>
+<dl class="docutils">
+<dt>try:</dt>
+<dd><dl class="first last docutils">
+<dt>with timeout(3):</dt>
+<dd>do_stuff()</dd>
+</dl>
+</dd>
+<dt>except TimeoutError:</dt>
+<dd>do_something_else()</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>seconds</strong> (<em>int</em>) &#8211; Allowed time for function in seconds.</li>
+<li><strong>error_message</strong> (<em>str</em>) &#8211; An error message.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="monty.functools.timeout.handle_timeout">
+<code class="descname">handle_timeout</code><span class="sig-paren">(</span><em>signum</em>, <em>frame</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/functools.html#timeout.handle_timeout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.functools.timeout.handle_timeout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.inspect">
+<span id="monty-inspect-module"></span><h2>monty.inspect module<a class="headerlink" href="#module-monty.inspect" title="Permalink to this headline">¶</a></h2>
+<p>Useful additional functions to help get information about live objects</p>
+<dl class="function">
+<dt id="monty.inspect.all_subclasses">
+<code class="descname">all_subclasses</code><span class="sig-paren">(</span><em>cls</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/inspect.html#all_subclasses"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.inspect.all_subclasses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a class <cite>cls</cite>, this recursive function returns a list with
+all subclasses, subclasses of subclasses, and so on.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.inspect.caller_name">
+<code class="descname">caller_name</code><span class="sig-paren">(</span><em>skip=2</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/inspect.html#caller_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.inspect.caller_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a name of a caller in the format module.class.method</p>
+<p><cite>skip</cite> specifies how many levels of stack to skip while getting caller
+name. skip=1 means &#8220;who calls me&#8221;, skip=2 &#8220;who calls my caller&#8221; etc.</p>
+<p>An empty string is returned if skipped levels exceed stack height</p>
+<p>Taken from:</p>
+<blockquote>
+<div><a class="reference external" href="https://gist.github.com/techtonik/2151727">https://gist.github.com/techtonik/2151727</a></div></blockquote>
+<p>Public Domain, i.e. feel free to copy/paste</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.inspect.find_top_pyfile">
+<code class="descname">find_top_pyfile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/inspect.html#find_top_pyfile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.inspect.find_top_pyfile" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function inspects the Cpython frame to find the path of the script.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.inspect.initializer">
+<code class="descname">initializer</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/inspect.html#initializer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.inspect.initializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Automatically assigns the parameters.
+<a class="reference external" href="http://stackoverflow.com/questions/1389180/python-automatically-initialize-instance-variables">http://stackoverflow.com/questions/1389180/python-automatically-initialize-instance-variables</a></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">process</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="nd">@initializer</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cmd</span><span class="p">,</span> <span class="n">reachable</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s1">&#39;root&#39;</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="k">pass</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">process</span><span class="p">(</span><span class="s1">&#39;halt&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">cmd</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">reachable</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">user</span>
+<span class="go">(&#39;halt&#39;, True, &#39;root&#39;)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.io">
+<span id="monty-io-module"></span><h2>monty.io module<a class="headerlink" href="#module-monty.io" title="Permalink to this headline">¶</a></h2>
+<p>Augments Python&#8217;s suite of IO functions with useful transparent support for
+compressed files.</p>
+<dl class="class">
+<dt id="monty.io.FileLock">
+<em class="property">class </em><code class="descname">FileLock</code><span class="sig-paren">(</span><em>file_name</em>, <em>timeout=10</em>, <em>delay=0.05</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/io.html#FileLock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.io.FileLock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>A file locking mechanism that has context-manager support so you can use
+it in a with statement. This should be relatively cross-compatible as it
+doesn&#8217;t rely on msvcrt or fcntl for the locking.
+Taken from <a class="reference external" href="http://www.evanfosmark.com/2009/01/cross-platform-file-locking">http://www.evanfosmark.com/2009/01/cross-platform-file-locking</a>
+-support-in-python/</p>
+<p>Prepare the file locker. Specify the file to lock and optionally
+the maximum timeout and the delay between each attempt to lock.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>file_name</strong> &#8211; Name of file to lock.</li>
+<li><strong>timeout</strong> &#8211; Maximum timeout for locking. Defaults to 10.</li>
+<li><strong>delay</strong> &#8211; Delay between each attempt to lock. Defaults to 0.05.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="monty.io.FileLock.Error">
+<code class="descname">Error</code><a class="headerlink" href="#monty.io.FileLock.Error" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#monty.io.FileLockException" title="monty.io.FileLockException"><code class="xref py py-class docutils literal"><span class="pre">FileLockException</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="monty.io.FileLock.acquire">
+<code class="descname">acquire</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/io.html#FileLock.acquire"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.io.FileLock.acquire" title="Permalink to this definition">¶</a></dt>
+<dd><p>Acquire the lock, if possible. If the lock is in use, it check again
+every <cite>delay</cite> seconds. It does this until it either gets the lock or
+exceeds <cite>timeout</cite> number of seconds, in which case it throws
+an exception.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="monty.io.FileLock.release">
+<code class="descname">release</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/io.html#FileLock.release"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.io.FileLock.release" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get rid of the lock by deleting the lockfile.
+When working in a <cite>with</cite> statement, this gets automatically
+called at the end.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="monty.io.FileLockException">
+<em class="property">exception </em><code class="descname">FileLockException</code><a class="reference internal" href="_modules/monty/io.html#FileLockException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.io.FileLockException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">Exception</span></code></p>
+<p>Exception raised by FileLock.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.io.get_open_fds">
+<code class="descname">get_open_fds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/io.html#get_open_fds"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.io.get_open_fds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of open file descriptors for current process</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.io.reverse_readfile">
+<code class="descname">reverse_readfile</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/io.html#reverse_readfile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.io.reverse_readfile" title="Permalink to this definition">¶</a></dt>
+<dd><p>A much faster reverse read of file by using Python&#8217;s mmap to generate a
+memory-mapped file. It is slower for very small files than
+reverse_readline, but at least 2x faster for large files (the primary use
+of such a method).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<em>str</em>) &#8211; Name of file to read.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Yields:</th><td class="field-body">Lines from the file in reverse order.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.io.reverse_readline">
+<code class="descname">reverse_readline</code><span class="sig-paren">(</span><em>m_file</em>, <em>blk_size=4096</em>, <em>max_mem=4000000</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/io.html#reverse_readline"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.io.reverse_readline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generator method to read a file line-by-line, but backwards. This allows
+one to efficiently get data at the end of a file.</p>
+<p>Based on code by Peter Astrand &lt;<a class="reference external" href="mailto:astrand&#37;&#52;&#48;cendio&#46;se">astrand<span>&#64;</span>cendio<span>&#46;</span>se</a>&gt;, using modifications by
+Raymond Hettinger and Kevin German.
+<a class="reference external" href="http://code.activestate.com/recipes/439045-read-a-text-file-backwards">http://code.activestate.com/recipes/439045-read-a-text-file-backwards</a>
+-yet-another-implementat/</p>
+<p>Reads file forwards and reverses in memory for files smaller than the
+max_mem parameter, or for gzip files where reverse seeks are not supported.</p>
+<p>Files larger than max_mem are dynamically read backwards.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>m_file</strong> (<em>File</em>) &#8211; File stream to read (backwards)</li>
+<li><strong>blk_size</strong> (<em>int</em>) &#8211; The buffer size. Defaults to 4096.</li>
+<li><strong>max_mem</strong> (<em>int</em>) &#8211; The maximum amount of memory to involve in this
+operation. This is used to determine when to reverse a file
+in-memory versus seeking portions of a file. For bz2 files,
+this sets the maximum block size.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Generator that returns lines from the file. Similar behavior to the
+file.readline() method, except the lines are returned from the back
+of the file.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.io.zopen">
+<code class="descname">zopen</code><span class="sig-paren">(</span><em>filename</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/io.html#zopen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.io.zopen" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function wraps around the bz2, gzip and standard python&#8217;s open
+function to deal intelligently with bzipped, gzipped or standard text
+files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filename</strong> (<em>str</em>) &#8211; filename</li>
+<li><strong>*args</strong> &#8211; Standard args for python open(..). E.g., &#8216;r&#8217; for read, &#8216;w&#8217; for
+write.</li>
+<li><strong>**kwargs</strong> &#8211; Standard kwargs for python open(..).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">File-like object. Supports with context.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.itertools">
+<span id="monty-itertools-module"></span><h2>monty.itertools module<a class="headerlink" href="#module-monty.itertools" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="monty.itertools.chunks">
+<code class="descname">chunks</code><span class="sig-paren">(</span><em>items</em>, <em>n</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/itertools.html#chunks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.itertools.chunks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield successive n-sized chunks from a list-like object.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pprint</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">chunks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">25</span><span class="p">),</span> <span class="mi">10</span><span class="p">)))</span>
+<span class="go">[(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),</span>
+<span class="go"> (11, 12, 13, 14, 15, 16, 17, 18, 19, 20),</span>
+<span class="go"> (21, 22, 23, 24)]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.itertools.ilotri">
+<code class="descname">ilotri</code><span class="sig-paren">(</span><em>items</em>, <em>diago=True</em>, <em>with_inds=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/itertools.html#ilotri"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.itertools.ilotri" title="Permalink to this definition">¶</a></dt>
+<dd><p>A generator that yields the lower triangle of the matrix (items x items)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>items</strong> &#8211; Iterable object with elements [e0, e1, ...]</li>
+<li><strong>diago</strong> &#8211; False if diagonal matrix elements should be excluded</li>
+<li><strong>with_inds</strong> &#8211; If True, (i,j) (e_i, e_j) is returned else (e_i, e_j)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="p">(</span><span class="n">ij</span><span class="p">,</span> <span class="n">mate</span><span class="p">)</span> <span class="ow">in</span> <span class="n">ilotri</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">with_inds</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ij:&quot;</span><span class="p">,</span> <span class="n">ij</span><span class="p">,</span> <span class="s2">&quot;mate:&quot;</span><span class="p">,</span> <span class="n">mate</span><span class="p">)</span>
+<span class="go">ij: (0, 0) mate: (0, 0)</span>
+<span class="go">ij: (1, 0) mate: (1, 0)</span>
+<span class="go">ij: (1, 1) mate: (1, 1)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.itertools.iterator_from_slice">
+<code class="descname">iterator_from_slice</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/itertools.html#iterator_from_slice"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.itertools.iterator_from_slice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructs an iterator given a slice object s.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The function returns an infinite iterator if s.stop is None</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.itertools.iuptri">
+<code class="descname">iuptri</code><span class="sig-paren">(</span><em>items</em>, <em>diago=True</em>, <em>with_inds=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/itertools.html#iuptri"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.itertools.iuptri" title="Permalink to this definition">¶</a></dt>
+<dd><p>A generator that yields the upper triangle of the matrix (items x items)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>items</strong> &#8211; Iterable object with elements [e0, e1, ...]</li>
+<li><strong>diago</strong> &#8211; False if diagonal matrix elements should be excluded</li>
+<li><strong>with_inds</strong> &#8211; If True, (i,j) (e_i, e_j) is returned else (e_i, e_j)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="p">(</span><span class="n">ij</span><span class="p">,</span> <span class="n">mate</span><span class="p">)</span> <span class="ow">in</span> <span class="n">iuptri</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">with_inds</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ij:&quot;</span><span class="p">,</span> <span class="n">ij</span><span class="p">,</span> <span class="s2">&quot;mate:&quot;</span><span class="p">,</span> <span class="n">mate</span><span class="p">)</span>
+<span class="go">ij: (0, 0) mate: (0, 0)</span>
+<span class="go">ij: (0, 1) mate: (0, 1)</span>
+<span class="go">ij: (1, 1) mate: (1, 1)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.json">
+<span id="monty-json-module"></span><h2>monty.json module<a class="headerlink" href="#module-monty.json" title="Permalink to this headline">¶</a></h2>
+<p>JSON serialization and deserialization utilities.</p>
+<dl class="exception">
+<dt id="monty.json.MSONError">
+<em class="property">exception </em><code class="descname">MSONError</code><a class="reference internal" href="_modules/monty/json.html#MSONError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.json.MSONError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">Exception</span></code></p>
+<p>Exception class for serialization errors.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="monty.json.MSONable">
+<em class="property">class </em><code class="descname">MSONable</code><a class="reference internal" href="_modules/monty/json.html#MSONable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.json.MSONable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>This is a mix-in base class specifying an API for msonable objects. MSON
+is Monty JSON. Essentially, MSONable objects must implement an as_dict
+method, which must return a json serializable dict and must also support
+no arguments (though optional arguments to finetune the output is ok),
+and a from_dict class method that regenerates the object from the dict
+generated by the as_dict method. The as_dict method should contain the
+&#8220;&#64;module&#8221; and &#8220;&#64;class&#8221; keys which will allow the MontyEncoder to
+dynamically deserialize the class. E.g.:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">d</span><span class="p">[</span><span class="s2">&quot;@module&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__module__</span>
+<span class="n">d</span><span class="p">[</span><span class="s2">&quot;@module&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span>
+</pre></div>
+</div>
+<p>A default implementation is provided in MSONable, which automatically
+determines if the class already contains self.argname or self._argname
+attributes for every arg. If so, these will be used for serialization in
+the dict format. Similarly, the default from_dict will deserialization
+classes of such form. An example is given below:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MSONClass</span><span class="p">(</span><span class="n">MSONable</span><span class="p">):</span>
+
+<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_c</span> <span class="o">=</span> <span class="n">c</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_d</span> <span class="o">=</span> <span class="n">d</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">kwargs</span> <span class="o">=</span> <span class="n">kwargs</span>
+</pre></div>
+</div>
+<p>For such classes, you merely need to inherit from MSONable and you do not
+need to implement your own as_dict or from_dict protocol.</p>
+<dl class="method">
+<dt id="monty.json.MSONable.as_dict">
+<code class="descname">as_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/json.html#MSONable.as_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.json.MSONable.as_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>A JSON serializable dict representation of an object.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="monty.json.MSONable.from_dict">
+<em class="property">classmethod </em><code class="descname">from_dict</code><span class="sig-paren">(</span><em>d</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/json.html#MSONable.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.json.MSONable.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="monty.json.MSONable.to_json">
+<code class="descname">to_json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/json.html#MSONable.to_json"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.json.MSONable.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a json string representation of the MSONable object.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="monty.json.MontyDecoder">
+<em class="property">class </em><code class="descname">MontyDecoder</code><span class="sig-paren">(</span><em>object_hook=None</em>, <em>parse_float=None</em>, <em>parse_int=None</em>, <em>parse_constant=None</em>, <em>strict=True</em>, <em>object_pairs_hook=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/json.html#MontyDecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.json.MontyDecoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">json.decoder.JSONDecoder</span></code></p>
+<p>A Json Decoder which supports the MSONable API. By default, the
+decoder attempts to find a module and name associated with a dict. If
+found, the decoder will generate a Pymatgen as a priority.  If that fails,
+the original decoded dictionary from the string is returned. Note that
+nested lists and dicts containing pymatgen object will be decoded correctly
+as well.</p>
+<dl class="docutils">
+<dt>Usage:</dt>
+<dd>Add it as a <em>cls</em> keyword when using json.load
+json.loads(json_string, cls=MontyDecoder)</dd>
+</dl>
+<p><code class="docutils literal"><span class="pre">object_hook</span></code>, if specified, will be called with the result
+of every JSON object decoded and its return value will be used in
+place of the given <code class="docutils literal"><span class="pre">dict</span></code>.  This can be used to provide custom
+deserializations (e.g. to support JSON-RPC class hinting).</p>
+<p><code class="docutils literal"><span class="pre">object_pairs_hook</span></code>, if specified will be called with the result of
+every JSON object decoded with an ordered list of pairs.  The return
+value of <code class="docutils literal"><span class="pre">object_pairs_hook</span></code> will be used instead of the <code class="docutils literal"><span class="pre">dict</span></code>.
+This feature can be used to implement custom decoders that rely on the
+order that the key and value pairs are decoded (for example,
+collections.OrderedDict will remember the order of insertion). If
+<code class="docutils literal"><span class="pre">object_hook</span></code> is also defined, the <code class="docutils literal"><span class="pre">object_pairs_hook</span></code> takes
+priority.</p>
+<p><code class="docutils literal"><span class="pre">parse_float</span></code>, if specified, will be called with the string
+of every JSON float to be decoded. By default this is equivalent to
+float(num_str). This can be used to use another datatype or parser
+for JSON floats (e.g. decimal.Decimal).</p>
+<p><code class="docutils literal"><span class="pre">parse_int</span></code>, if specified, will be called with the string
+of every JSON int to be decoded. By default this is equivalent to
+int(num_str). This can be used to use another datatype or parser
+for JSON integers (e.g. float).</p>
+<p><code class="docutils literal"><span class="pre">parse_constant</span></code>, if specified, will be called with one of the
+following strings: -Infinity, Infinity, NaN.
+This can be used to raise an exception if invalid JSON numbers
+are encountered.</p>
+<p>If <code class="docutils literal"><span class="pre">strict</span></code> is false (true is the default), then control
+characters will be allowed inside strings.  Control characters in
+this context are those with character codes in the 0-31 range,
+including <code class="docutils literal"><span class="pre">'\t'</span></code> (tab), <code class="docutils literal"><span class="pre">'\n'</span></code>, <code class="docutils literal"><span class="pre">'\r'</span></code> and <code class="docutils literal"><span class="pre">'\0'</span></code>.</p>
+<dl class="method">
+<dt id="monty.json.MontyDecoder.decode">
+<code class="descname">decode</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/json.html#MontyDecoder.decode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.json.MontyDecoder.decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="monty.json.MontyDecoder.process_decoded">
+<code class="descname">process_decoded</code><span class="sig-paren">(</span><em>d</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/json.html#MontyDecoder.process_decoded"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.json.MontyDecoder.process_decoded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursive method to support decoding dicts and lists containing
+pymatgen objects.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="monty.json.MontyEncoder">
+<em class="property">class </em><code class="descname">MontyEncoder</code><span class="sig-paren">(</span><em>skipkeys=False</em>, <em>ensure_ascii=True</em>, <em>check_circular=True</em>, <em>allow_nan=True</em>, <em>sort_keys=False</em>, <em>indent=None</em>, <em>separators=None</em>, <em>default=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/json.html#MontyEncoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.json.MontyEncoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">json.encoder.JSONEncoder</span></code></p>
+<p>A Json Encoder which supports the MSONable API, plus adds support for
+numpy arrays and</p>
+<dl class="docutils">
+<dt>Usage:</dt>
+<dd>Add it as a <em>cls</em> keyword when using json.dump
+json.dumps(object, cls=MontyEncoder)</dd>
+</dl>
+<p>Constructor for JSONEncoder, with sensible defaults.</p>
+<p>If skipkeys is false, then it is a TypeError to attempt
+encoding of keys that are not str, int, float or None.  If
+skipkeys is True, such items are simply skipped.</p>
+<p>If ensure_ascii is true, the output is guaranteed to be str
+objects with all incoming non-ASCII characters escaped.  If
+ensure_ascii is false, the output can contain non-ASCII characters.</p>
+<p>If check_circular is true, then lists, dicts, and custom encoded
+objects will be checked for circular references during encoding to
+prevent an infinite recursion (which would cause an OverflowError).
+Otherwise, no such check takes place.</p>
+<p>If allow_nan is true, then NaN, Infinity, and -Infinity will be
+encoded as such.  This behavior is not JSON specification compliant,
+but is consistent with most JavaScript based encoders and decoders.
+Otherwise, it will be a ValueError to encode such floats.</p>
+<p>If sort_keys is true, then the output of dictionaries will be
+sorted by key; this is useful for regression tests to ensure
+that JSON serializations can be compared on a day-to-day basis.</p>
+<p>If indent is a non-negative integer, then JSON array
+elements and object members will be pretty-printed with that
+indent level.  An indent level of 0 will only insert newlines.
+None is the most compact representation.</p>
+<p>If specified, separators should be an (item_separator, key_separator)
+tuple.  The default is (&#8216;, &#8216;, &#8216;: &#8216;) if <em>indent</em> is <code class="docutils literal"><span class="pre">None</span></code> and
+(&#8216;,&#8217;, &#8216;: &#8216;) otherwise.  To get the most compact JSON representation,
+you should specify (&#8216;,&#8217;, &#8216;:&#8217;) to eliminate whitespace.</p>
+<p>If specified, default is a function that gets called for objects
+that can&#8217;t otherwise be serialized.  It should return a JSON encodable
+version of the object or raise a <code class="docutils literal"><span class="pre">TypeError</span></code>.</p>
+<dl class="method">
+<dt id="monty.json.MontyEncoder.default">
+<code class="descname">default</code><span class="sig-paren">(</span><em>o</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/json.html#MontyEncoder.default"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.json.MontyEncoder.default" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overriding default method for JSON encoding. This method does two
+things: (a) If an object has a to_dict property, return the to_dict
+output. (b) If the &#64;module and &#64;class keys are not in the to_dict,
+add them to the output automatically. If the object has no to_dict
+property, the default Python json encoder default method is called.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>o</strong> &#8211; Python object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Python dict representation.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.json.jsanitize">
+<code class="descname">jsanitize</code><span class="sig-paren">(</span><em>obj</em>, <em>strict=False</em>, <em>allow_bson=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/json.html#jsanitize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.json.jsanitize" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method cleans an input json-like object, either a list or a dict or
+some sequence, nested or otherwise, by converting all non-string
+dictionary keys (such as int and float) to strings, and also recursively
+encodes all objects using Monty&#8217;s as_dict() protocol.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>obj</strong> &#8211; input json-like object.</li>
+<li><strong>strict</strong> (<em>bool</em>) &#8211; This parameters sets the behavior when jsanitize
+encounters an object it does not understand. If strict is True,
+jsanitize will try to get the as_dict() attribute of the object. If
+no such attribute is found, an attribute error will be thrown. If
+strict is False, jsanitize will simply call str(object) to convert
+the object to a string representation.</li>
+<li><strong>allow_bson</strong> (<em>bool</em>) &#8211; This parameters sets the behavior when jsanitize
+encounters an bson supported type such as objectid and datetime. If
+True, such bson types will be ignored, allowing for proper
+insertion into MongoDb databases.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Sanitized dict that can be json serialized.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.logging">
+<span id="monty-logging-module"></span><h2>monty.logging module<a class="headerlink" href="#module-monty.logging" title="Permalink to this headline">¶</a></h2>
+<p>TODO: Modify module doc.</p>
+<dl class="function">
+<dt id="monty.logging.enable_logging">
+<code class="descname">enable_logging</code><span class="sig-paren">(</span><em>main</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/logging.html#enable_logging"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.logging.enable_logging" title="Permalink to this definition">¶</a></dt>
+<dd><p>This decorator is used to decorate main functions.
+It adds the initialization of the logger and an argument parser that allows
+one to select the loglevel.
+Useful if we are writing simple main functions that call libraries where
+the logging module is used</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>main</strong> &#8211; main function.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.logging.logged">
+<code class="descname">logged</code><span class="sig-paren">(</span><em>level=10</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/logging.html#logged"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.logging.logged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Useful logging decorator. If a method is logged, the beginning and end of
+the method call will be logged at a pre-specified level.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>level</strong> &#8211; Level to log method at. Defaults to DEBUG.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.math">
+<span id="monty-math-module"></span><h2>monty.math module<a class="headerlink" href="#module-monty.math" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="monty.math.nCr">
+<code class="descname">nCr</code><span class="sig-paren">(</span><em>n</em>, <em>r</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/math.html#nCr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.math.nCr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates nCr.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>n</strong> (<em>int</em>) &#8211; total number of items.</li>
+<li><strong>r</strong> (<em>int</em>) &#8211; items to choose</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">nCr.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.math.nPr">
+<code class="descname">nPr</code><span class="sig-paren">(</span><em>n</em>, <em>r</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/math.html#nPr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.math.nPr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates nPr.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>n</strong> (<em>int</em>) &#8211; total number of items.</li>
+<li><strong>r</strong> (<em>int</em>) &#8211; items to permute</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">nPr.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.msgpack">
+<span id="monty-msgpack-module"></span><h2>monty.msgpack module<a class="headerlink" href="#module-monty.msgpack" title="Permalink to this headline">¶</a></h2>
+<p>msgpack serialization and deserialization utilities. Right now, this is a stub
+using monty.json encoder and decoders. The naming is just for clearer usage with
+msgpack&#8217;s default and object_hook naming.</p>
+<dl class="function">
+<dt id="monty.msgpack.default">
+<code class="descname">default</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/msgpack.html#default"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.msgpack.default" title="Permalink to this definition">¶</a></dt>
+<dd><p>For use with msgpack.packb(obj, default=default). Supports Monty&#8217;s as_dict
+protocol, numpy arrays and datetime.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.msgpack.object_hook">
+<code class="descname">object_hook</code><span class="sig-paren">(</span><em>d</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/msgpack.html#object_hook"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.msgpack.object_hook" title="Permalink to this definition">¶</a></dt>
+<dd><p>For use with msgpack.unpackb(dict, object_hook=object_hook.).  Supports
+Monty&#8217;s as_dict protocol, numpy arrays and datetime.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.operator">
+<span id="monty-operator-module"></span><h2>monty.operator module<a class="headerlink" href="#module-monty.operator" title="Permalink to this headline">¶</a></h2>
+<p>Useful additional functions for operators</p>
+<dl class="function">
+<dt id="monty.operator.operator_from_str">
+<code class="descname">operator_from_str</code><span class="sig-paren">(</span><em>op</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/operator.html#operator_from_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.operator.operator_from_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the operator associated to the given string <cite>op</cite>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><cite>KeyError</cite> if invalid string.</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">operator_from_str</span><span class="p">(</span><span class="s2">&quot;==&quot;</span><span class="p">)(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">and</span> <span class="n">operator_from_str</span><span class="p">(</span><span class="s2">&quot;+&quot;</span><span class="p">)(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.pprint">
+<span id="monty-pprint-module"></span><h2>monty.pprint module<a class="headerlink" href="#module-monty.pprint" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="monty.pprint.draw_tree">
+<code class="descname">draw_tree</code><span class="sig-paren">(</span><em>node</em>, <em>child_iter=&lt;function &lt;lambda&gt;&gt;</em>, <em>text_str=&lt;function &lt;lambda&gt;&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/pprint.html#draw_tree"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.pprint.draw_tree" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>node</strong> &#8211; the root of the tree to be drawn,</li>
+<li><strong>child_iter</strong> &#8211; function that when called with a node, returns an iterable over all its children</li>
+<li><strong>text_str</strong> &#8211; turns a node into the text to be displayed in the tree.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The default implementations of these two arguments retrieve the children by accessing node.children
+and simply use str(node) to convert a node to a string. The resulting tree is drawn into a buffer and returned as a string.</p>
+<p>Based on <a class="reference external" href="https://pypi.python.org/pypi/asciitree/">https://pypi.python.org/pypi/asciitree/</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.pprint.pprint_table">
+<code class="descname">pprint_table</code><span class="sig-paren">(</span><em>table</em>, <em>out=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='UTF-8'&gt;</em>, <em>rstrip=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/pprint.html#pprint_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.pprint.pprint_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints out a table of data, padded for alignment
+Each row must have the same number of columns.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>table</strong> &#8211; The table to print. A list of lists.</li>
+<li><strong>out</strong> &#8211; Output stream (file-like object)</li>
+<li><strong>rstrip</strong> &#8211; if True, trailing withespaces are removed from the entries.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.re">
+<span id="monty-re-module"></span><h2>monty.re module<a class="headerlink" href="#module-monty.re" title="Permalink to this headline">¶</a></h2>
+<p>#TODO: Write module doc.</p>
+<dl class="function">
+<dt id="monty.re.regrep">
+<code class="descname">regrep</code><span class="sig-paren">(</span><em>filename</em>, <em>patterns</em>, <em>reverse=False</em>, <em>terminate_on_match=False</em>, <em>postprocess=&lt;class 'str'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/re.html#regrep"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.re.regrep" title="Permalink to this definition">¶</a></dt>
+<dd><p>A powerful regular expression version of grep.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filename</strong> (<em>str</em>) &#8211; Filename to grep.</li>
+<li><strong>patterns</strong> (<em>dict</em>) &#8211; A dict of patterns, e.g.,
+{&#8220;energy&#8221;: &#8220;energy(sigma-&gt;0)s+=s+([d-.]+)&#8221;}.</li>
+<li><strong>reverse</strong> (<em>bool</em>) &#8211; Read files in reverse. Defaults to false. Useful for
+large files, especially when used with terminate_on_match.</li>
+<li><strong>terminate_on_match</strong> (<em>bool</em>) &#8211; Whether to terminate when there is at
+least one match in each key in pattern.</li>
+<li><strong>postprocess</strong> (<em>callable</em>) &#8211; A post processing function to convert all
+matches. Defaults to str, i.e., no change.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><blockquote>
+<div><dl class="docutils">
+<dt>{key1: [[[matches...], lineno], [[matches...], lineno],</dt>
+<dd><p class="first last">[[matches...], lineno], ...],</p>
+</dd>
+</dl>
+<p>key2: ...}</p>
+</div></blockquote>
+<p>For reverse reads, the lineno is given as a -ve number. Please note
+that 0-based indexing is used.</p>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">A dict of the following form</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.serialization">
+<span id="monty-serialization-module"></span><h2>monty.serialization module<a class="headerlink" href="#module-monty.serialization" title="Permalink to this headline">¶</a></h2>
+<p>This module implements serialization support for common formats such as json
+and yaml.</p>
+<dl class="function">
+<dt id="monty.serialization.dumpfn">
+<code class="descname">dumpfn</code><span class="sig-paren">(</span><em>obj</em>, <em>fn</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/serialization.html#dumpfn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.serialization.dumpfn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dump to a json/yaml directly by filename instead of a File-like object.
+For YAML, PyYAML must be installed. The file type is automatically
+detected. YAML is assumed if the filename contains &#8220;yaml&#8221; (lower or upper
+case). Otherwise, json is always assumed. Furthermore, if pyyaml is
+compiled with the LibYAML library, the CDumper is automatically chosen
+for ~10x faster parsing.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>obj</strong> (<em>object</em>) &#8211; Object to dump.</li>
+<li><strong>fn</strong> (<em>str</em>) &#8211; filename.</li>
+<li><strong>*args</strong> &#8211; Any of the args supported by json/yaml.dump.</li>
+<li><strong>**kwargs</strong> &#8211; Any of the kwargs supported by json/yaml.dump.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(object) Result of json.load.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.serialization.loadfn">
+<code class="descname">loadfn</code><span class="sig-paren">(</span><em>fn</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/serialization.html#loadfn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.serialization.loadfn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads json/yaml/msgpack directly from a filename instead of a
+File-like object. For YAML, PyYAML must be installed. The file type is
+automatically detected. YAML is assumed if the filename contains &#8220;yaml&#8221;
+(lower or upper case). Otherwise, json is always assumed. Furthermore, if
+pyyaml is compiled with the LibYAML library, the CLoader is automatically
+chosen for ~10x faster parsing.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>fn</strong> (<em>str</em>) &#8211; filename</li>
+<li><strong>*args</strong> &#8211; Any of the args supported by json/yaml.load.</li>
+<li><strong>**kwargs</strong> &#8211; Any of the kwargs supported by json/yaml.load.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(object) Result of json/yaml/msgpack.load.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.shutil">
+<span id="monty-shutil-module"></span><h2>monty.shutil module<a class="headerlink" href="#module-monty.shutil" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="monty.shutil.compress_dir">
+<code class="descname">compress_dir</code><span class="sig-paren">(</span><em>path</em>, <em>compression='gz'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/shutil.html#compress_dir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.shutil.compress_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursively compresses all files in a directory. Note that this
+compresses all files singly, i.e., it does not create a tar archive. For
+that, just use Python tarfile class.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> (<em>str</em>) &#8211; Path to parent directory.</li>
+<li><strong>compression</strong> (<em>str</em>) &#8211; A compression mode. Valid options are &#8220;gz&#8221; or
+&#8220;bz2&#8221;. Defaults to gz.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.shutil.compress_file">
+<code class="descname">compress_file</code><span class="sig-paren">(</span><em>filepath</em>, <em>compression='gz'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/shutil.html#compress_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.shutil.compress_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compresses a file with the correct extension. Functions like standard
+Unix command line gzip and bzip2 in the sense that the original
+uncompressed files are not retained.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>filepath</strong> (<em>str</em>) &#8211; Path to file.</li>
+<li><strong>compression</strong> (<em>str</em>) &#8211; A compression mode. Valid options are &#8220;gz&#8221; or
+&#8220;bz2&#8221;. Defaults to &#8220;gz&#8221;.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.shutil.copy_r">
+<code class="descname">copy_r</code><span class="sig-paren">(</span><em>src</em>, <em>dst</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/shutil.html#copy_r"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.shutil.copy_r" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implements a recursive copy function similar to Unix&#8217;s &#8220;cp -r&#8221; command.
+Surprisingly, python does not have a real equivalent. shutil.copytree
+only works if the destination directory is not present.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>src</strong> (<em>str</em>) &#8211; Source folder to copy.</li>
+<li><strong>dst</strong> (<em>str</em>) &#8211; Destination folder.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.shutil.decompress_dir">
+<code class="descname">decompress_dir</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/shutil.html#decompress_dir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.shutil.decompress_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursively decompresses all files in a directory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<em>str</em>) &#8211; Path to parent directory.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.shutil.decompress_file">
+<code class="descname">decompress_file</code><span class="sig-paren">(</span><em>filepath</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/shutil.html#decompress_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.shutil.decompress_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decompresses a file with the correct extension. Automatically detects
+gz, bz2 or z extension.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>filepath</strong> (<em>str</em>) &#8211; Path to file.</li>
+<li><strong>compression</strong> (<em>str</em>) &#8211; A compression mode. Valid options are &#8220;gz&#8221; or
+&#8220;bz2&#8221;. Defaults to &#8220;gz&#8221;.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.shutil.gzip_dir">
+<code class="descname">gzip_dir</code><span class="sig-paren">(</span><em>path</em>, <em>compresslevel=6</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/shutil.html#gzip_dir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.shutil.gzip_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gzips all files in a directory. Note that this is different from
+shutil.make_archive, which creates a tar archive. The aim of this method
+is to create gzipped files that can still be read using common Unix-style
+commands like zless or zcat.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> (<em>str</em>) &#8211; Path to directory.</li>
+<li><strong>compresslevel</strong> (<em>int</em>) &#8211; Level of compression, 1-9. 9 is default for
+GzipFile, 6 is default for gzip.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.string">
+<span id="monty-string-module"></span><h2>monty.string module<a class="headerlink" href="#module-monty.string" title="Permalink to this headline">¶</a></h2>
+<p>Useful additional string functions.</p>
+<dl class="function">
+<dt id="monty.string.boxed">
+<code class="descname">boxed</code><span class="sig-paren">(</span><em>msg</em>, <em>ch='='</em>, <em>pad=5</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/string.html#boxed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.string.boxed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string in a box</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>msg</strong> &#8211; Input string.</li>
+<li><strong>ch</strong> &#8211; Character used to form the box.</li>
+<li><strong>pad</strong> &#8211; Number of characters ch added before and after msg.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">boxed</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="n">ch</span><span class="o">=</span><span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="go">***********</span>
+<span class="go">** hello **</span>
+<span class="go">***********</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.string.indent">
+<code class="descname">indent</code><span class="sig-paren">(</span><em>lines</em>, <em>amount</em>, <em>ch=' '</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/string.html#indent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.string.indent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indent the lines in a string by padding each one with proper number of pad characters</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.string.is_string">
+<code class="descname">is_string</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/string.html#is_string"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.string.is_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if s behaves like a string (duck typing test).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.string.list_strings">
+<code class="descname">list_strings</code><span class="sig-paren">(</span><em>arg</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/string.html#list_strings"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.string.list_strings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Always return a list of strings, given a string or list of strings as
+input.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Examples:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">list_strings</span><span class="p">(</span><span class="s1">&#39;A single string&#39;</span><span class="p">)</span>
+<span class="go">[&#39;A single string&#39;]</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">list_strings</span><span class="p">([</span><span class="s1">&#39;A single string in a list&#39;</span><span class="p">])</span>
+<span class="go">[&#39;A single string in a list&#39;]</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">list_strings</span><span class="p">([</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;list&#39;</span><span class="p">,</span><span class="s1">&#39;of&#39;</span><span class="p">,</span><span class="s1">&#39;strings&#39;</span><span class="p">])</span>
+<span class="go">[&#39;A&#39;, &#39;list&#39;, &#39;of&#39;, &#39;strings&#39;]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.string.make_banner">
+<code class="descname">make_banner</code><span class="sig-paren">(</span><em>s</em>, <em>width=78</em>, <em>mark='*'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/string.html#make_banner"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.string.make_banner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="monty.string.marquee">
+<code class="descname">marquee</code><span class="sig-paren">(</span><em>text=''</em>, <em>width=78</em>, <em>mark='*'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/string.html#marquee"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.string.marquee" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the input string centered in a &#8216;marquee&#8217;.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>text</strong> (<em>str</em>) &#8211; Input string</li>
+<li><strong>width</strong> (<em>int</em>) &#8211; Width of final output string.</li>
+<li><strong>mark</strong> (<em>str</em>) &#8211; Character used to fill string.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Examples:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">marquee</span><span class="p">(</span><span class="s1">&#39;A test&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+<span class="go">&#39;**************** A test ****************&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">marquee</span><span class="p">(</span><span class="s1">&#39;A test&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">mark</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
+<span class="go">&#39;---------------- A test ----------------&#39;</span>
+</pre></div>
+</div>
+<p>marquee(&#8216;A test&#8217;,40, &#8216; &#8216;)
+&#8216;                 A test                 &#8216;</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.string.remove_non_ascii">
+<code class="descname">remove_non_ascii</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/string.html#remove_non_ascii"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.string.remove_non_ascii" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove non-ascii characters in a file. Needed when support for non-ASCII
+is not available.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>s</strong> (<em>str</em>) &#8211; Input string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">String with all non-ascii characters removed.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.string.str2unicode">
+<code class="descname">str2unicode</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/string.html#str2unicode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.string.str2unicode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts strings to unicode in python 2. Ignores Python 3 strings.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>s</strong> (<em>str/unicode</em>) &#8211; Input string / unicode.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Unicode.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.string.unicode2str">
+<code class="descname">unicode2str</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/string.html#unicode2str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.string.unicode2str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Forces a unicode to a string in Python 2, but transparently handles
+Python 3.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>s</strong> (<em>str/unicode</em>) &#8211; Input string / unicode.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">str in Python 2. Unchanged otherwise.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.subprocess">
+<span id="monty-subprocess-module"></span><h2>monty.subprocess module<a class="headerlink" href="#module-monty.subprocess" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="monty.subprocess.Command">
+<em class="property">class </em><code class="descname">Command</code><span class="sig-paren">(</span><em>command</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/subprocess.html#Command"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.subprocess.Command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Enables to run subprocess commands in a different thread with TIMEOUT
+option.</p>
+<dl class="docutils">
+<dt>Based on jcollado&#8217;s solution:</dt>
+<dd><a class="reference external" href="http://stackoverflow.com/questions/1191374/subprocess-with-timeout/4825933#4825933">http://stackoverflow.com/questions/1191374/subprocess-with-timeout/4825933#4825933</a></dd>
+<dt>and</dt>
+<dd><a class="reference external" href="https://gist.github.com/kirpit/1306188">https://gist.github.com/kirpit/1306188</a></dd>
+</dl>
+<dl class="attribute">
+<dt id="monty.subprocess.Command.retcode">
+<code class="descname">retcode</code><a class="headerlink" href="#monty.subprocess.Command.retcode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return code of the subprocess</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="monty.subprocess.Command.killed">
+<code class="descname">killed</code><a class="headerlink" href="#monty.subprocess.Command.killed" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if subprocess has been killed due to the timeout</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="monty.subprocess.Command.output">
+<code class="descname">output</code><a class="headerlink" href="#monty.subprocess.Command.output" title="Permalink to this definition">¶</a></dt>
+<dd><p>stdout of the subprocess</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="monty.subprocess.Command.error">
+<code class="descname">error</code><a class="headerlink" href="#monty.subprocess.Command.error" title="Permalink to this definition">¶</a></dt>
+<dd><p>stderr of the subprocess</p>
+</dd></dl>
+
+<p class="rubric">Example</p>
+<p>com = Command(&#8220;sleep 1&#8221;).run(timeout=2)
+print(com.retcode, com.killed, com.output, com.output)</p>
+<dl class="method">
+<dt id="monty.subprocess.Command.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>timeout=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/subprocess.html#Command.run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.subprocess.Command.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run a command in a separated thread and wait timeout seconds.
+kwargs are keyword arguments passed to Popen.</p>
+<p>Return: self</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.tempfile">
+<span id="monty-tempfile-module"></span><h2>monty.tempfile module<a class="headerlink" href="#module-monty.tempfile" title="Permalink to this headline">¶</a></h2>
+<p>Temporary directory and file creation utilities.</p>
+<dl class="class">
+<dt id="monty.tempfile.ScratchDir">
+<em class="property">class </em><code class="descname">ScratchDir</code><span class="sig-paren">(</span><em>rootpath</em>, <em>create_symbolic_link=False</em>, <em>copy_from_current_on_enter=False</em>, <em>copy_to_current_on_exit=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/tempfile.html#ScratchDir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.tempfile.ScratchDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">With effect from Python 3.2, tempfile.TemporaryDirectory already
+implements much of the functionality of ScratchDir. However, it does
+not provide options for copying of files to and from (though it is
+possible to do this with other methods provided by shutil).</p>
+</div>
+<p>Creates a &#8220;with&#8221; context manager that automatically handles creation of
+temporary directories (utilizing Python&#8217;s build in temp directory
+functions) and cleanup when done. This improves on Python&#8217;s built in
+functions by allowing for truly temporary workspace that are deleted
+when it is done. The way it works is as follows:</p>
+<ol class="arabic simple">
+<li>Create a temp dir in specified root path.</li>
+<li>Optionally copy input files from current directory to temp dir.</li>
+<li>Change to temp dir.</li>
+<li>User performs specified operations.</li>
+<li>Optionally copy generated output files back to original directory.</li>
+<li>Change back to original directory.</li>
+<li>Delete temp dir.</li>
+</ol>
+<p>Initializes scratch directory given a <strong>root</strong> path. There is no need
+to try to create unique directory names. The code will generate a
+temporary sub directory in the rootpath. The way to use this is using a
+with context manager. Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">ScratchDir</span><span class="p">(</span><span class="s2">&quot;/scratch&quot;</span><span class="p">):</span>
+    <span class="n">do_something</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>If the root path does not exist or is None, this will function as a
+simple pass through, i.e., nothing happens.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>rootpath</strong> (<em>str</em>) &#8211; The path in which to create temp subdirectories.
+If this is None, no temp directories will be created and
+this will just be a simple pass through.</li>
+<li><strong>create_symbolic_link</strong> (<em>bool</em>) &#8211; Whether to create a symbolic link in
+the current working directory to the scratch directory
+created.</li>
+<li><strong>copy_from_current_on_enter</strong> (<em>bool</em>) &#8211; Whether to copy all files from
+the current directory (recursively) to the temp dir at the
+start, e.g., if input files are needed for performing some
+actions. Defaults to False.</li>
+<li><strong>copy_to_current_on_exit</strong> (<em>bool</em>) &#8211; Whether to copy files from the
+scratch to the current directory (recursively) at the end. E
+.g., if output files are generated during the operation.
+Defaults to False.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="monty.tempfile.ScratchDir.SCR_LINK">
+<code class="descname">SCR_LINK</code><em class="property"> = 'scratch_link'</em><a class="headerlink" href="#monty.tempfile.ScratchDir.SCR_LINK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty.termcolor">
+<span id="monty-termcolor-module"></span><h2>monty.termcolor module<a class="headerlink" href="#module-monty.termcolor" title="Permalink to this headline">¶</a></h2>
+<p>Copyright (c) 2008-2011 Volvox Development Team</p>
+<p># Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the &#8220;Software&#8221;), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED &#8220;AS IS&#8221;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+#
+# Author: Konstantin Lepa &lt;<a class="reference external" href="mailto:konstantin&#46;lepa&#37;&#52;&#48;gmail&#46;com">konstantin<span>&#46;</span>lepa<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt;</p>
+<p>ANSII Color formatting for output in terminal.</p>
+<dl class="function">
+<dt id="monty.termcolor.colored">
+<code class="descname">colored</code><span class="sig-paren">(</span><em>text</em>, <em>color=None</em>, <em>on_color=None</em>, <em>attrs=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/termcolor.html#colored"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.termcolor.colored" title="Permalink to this definition">¶</a></dt>
+<dd><p>Colorize text.</p>
+<dl class="docutils">
+<dt>Available text colors:</dt>
+<dd>red, green, yellow, blue, magenta, cyan, white.</dd>
+<dt>Available text highlights:</dt>
+<dd>on_red, on_green, on_yellow, on_blue, on_magenta, on_cyan, on_white.</dd>
+<dt>Available attributes:</dt>
+<dd>bold, dark, underline, blink, reverse, concealed.</dd>
+</dl>
+<p class="rubric">Example</p>
+<p>colored(&#8216;Hello, World!&#8217;, &#8216;red&#8217;, &#8216;on_grey&#8217;, [&#8216;blue&#8217;, &#8216;blink&#8217;])
+colored(&#8216;Hello, World!&#8217;, &#8216;green&#8217;)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="monty.termcolor.cprint">
+<code class="descname">cprint</code><span class="sig-paren">(</span><em>text</em>, <em>color=None</em>, <em>on_color=None</em>, <em>attrs=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/monty/termcolor.html#cprint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#monty.termcolor.cprint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print colorize text.</p>
+<p>It accepts arguments of print function.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-monty">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-monty" title="Permalink to this headline">¶</a></h2>
+<p>Monty is the missing complement to Python. Monty implements supplementary
+useful functions for Python that are not part of the standard library.
+Examples include useful utilities like transparent support for zipped files,
+useful design patterns such as singleton and cached_class, and many more.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">monty package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-monty.bisect">monty.bisect module</a></li>
+<li><a class="reference internal" href="#module-monty.collections">monty.collections module</a></li>
+<li><a class="reference internal" href="#module-monty.design_patterns">monty.design_patterns module</a></li>
+<li><a class="reference internal" href="#module-monty.dev">monty.dev module</a></li>
+<li><a class="reference internal" href="#module-monty.fnmatch">monty.fnmatch module</a></li>
+<li><a class="reference internal" href="#module-monty.fractions">monty.fractions module</a></li>
+<li><a class="reference internal" href="#module-monty.functools">monty.functools module</a></li>
+<li><a class="reference internal" href="#module-monty.inspect">monty.inspect module</a></li>
+<li><a class="reference internal" href="#module-monty.io">monty.io module</a></li>
+<li><a class="reference internal" href="#module-monty.itertools">monty.itertools module</a></li>
+<li><a class="reference internal" href="#module-monty.json">monty.json module</a></li>
+<li><a class="reference internal" href="#module-monty.logging">monty.logging module</a></li>
+<li><a class="reference internal" href="#module-monty.math">monty.math module</a></li>
+<li><a class="reference internal" href="#module-monty.msgpack">monty.msgpack module</a></li>
+<li><a class="reference internal" href="#module-monty.operator">monty.operator module</a></li>
+<li><a class="reference internal" href="#module-monty.pprint">monty.pprint module</a></li>
+<li><a class="reference internal" href="#module-monty.re">monty.re module</a></li>
+<li><a class="reference internal" href="#module-monty.serialization">monty.serialization module</a></li>
+<li><a class="reference internal" href="#module-monty.shutil">monty.shutil module</a></li>
+<li><a class="reference internal" href="#module-monty.string">monty.string module</a></li>
+<li><a class="reference internal" href="#module-monty.subprocess">monty.subprocess module</a></li>
+<li><a class="reference internal" href="#module-monty.tempfile">monty.tempfile module</a></li>
+<li><a class="reference internal" href="#module-monty.termcolor">monty.termcolor module</a></li>
+<li><a class="reference internal" href="#module-monty">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Monty - The Missing Complement to Python</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="monty.os.html"
+                        title="next chapter">monty.os package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/monty.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="monty.os.html" title="monty.os package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Monty - The Missing Complement to Python"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">monty 0.9.6 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014, Shyue Ping Ong.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+
+
+  </body>
+</html>

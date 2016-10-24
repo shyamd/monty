@@ -1,3 +1,0 @@
-include *.md LICENSE.rst
-recursive-include monty *.py
-prune tests
