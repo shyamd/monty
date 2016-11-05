@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Monty : Python Made Even Easier &#8212; monty 0.9.6 documentation</title>
+    <title>Monty: Python Made Even Easier &#8212; monty 0.9.6 documentation</title>
     
     <link rel="stylesheet" href="_static/flasky.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -58,7 +58,7 @@
           <div class="body" role="main">
             
   <div class="section" id="monty-python-made-even-easier">
-<h1>Monty : Python Made Even Easier<a class="headerlink" href="#monty-python-made-even-easier" title="Permalink to this headline">¶</a></h1>
+<h1>Monty: Python Made Even Easier<a class="headerlink" href="#monty-python-made-even-easier" title="Permalink to this headline">¶</a></h1>
 <img alt="https://travis-ci.org/materialsvirtuallab/monty.png?branch=master" src="https://travis-ci.org/materialsvirtuallab/monty.png?branch=master" />
 <img alt="https://coveralls.io/repos/github/materialsvirtuallab/monty/badge.svg?branch=master" src="https://coveralls.io/repos/github/materialsvirtuallab/monty/badge.svg?branch=master" />
 <p>Monty is the missing complement to Python. Monty implements supplementary
@@ -78,8 +78,8 @@ provides suite of tools to solve many common problems, and hopefully,
 be a resource to collect the best solutions.</p>
 <p>Monty supports Python 2.7-3.x.</p>
 </div>
-<div class="section" id="latest-change-log">
-<h1>Latest Change Log<a class="headerlink" href="#latest-change-log" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="change-log">
+<h1>Change Log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="v0-9-6">
 <h2>v0.9.6<a class="headerlink" href="#v0-9-6" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
@@ -89,17 +89,12 @@ in default MSONable.</li>
 <p><a class="reference internal" href="changelog.html"><span class="doc">Older versions</span></a></p>
 </div>
 </div>
-<div class="section" id="installing-monty">
-<h1>Installing monty<a class="headerlink" href="#installing-monty" title="Permalink to this headline">¶</a></h1>
-<p>The easiest way to install monty on any system is to use easy_install or
-pip, as follows:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">easy_install</span> <span class="n">monty</span>
-</pre></div>
-</div>
-<p>or:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">monty</span>
-</pre></div>
-</div>
+<div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<dl class="docutils">
+<dt>::</dt>
+<dd>pip install monty</dd>
+</dl>
 </div>
 <div class="section" id="usage">
 <h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
@@ -108,10 +103,10 @@ standard Python library where possible. This style is adopted so that that
 it is almost always obvious where a particular method or function
 will reside. There are two recommended ways of using Monty.</p>
 <p>Method 1: Import the monty root:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">monty</span> <span class="k">as</span> <span class="nn">mt</span>
-<span class="k">with</span> <span class="n">mt</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">zopen</span><span class="p">(</span><span class="s2">&quot;src.gz&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">monty</span> <span class="k">as</span> <span class="nn">mty</span>
+<span class="k">with</span> <span class="n">mty</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">zopen</span><span class="p">(</span><span class="s2">&quot;src.gz&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="k">with</span> <span class="n">mt</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">zopen</span><span class="p">(</span><span class="s2">&quot;dest.bz2&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="k">with</span> <span class="n">mty</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">zopen</span><span class="p">(</span><span class="s2">&quot;dest.bz2&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -154,7 +149,7 @@ standard Unix&#8217;s zless/zgrep commands.</p>
 <span class="kn">from</span> <span class="nn">monty.io</span> <span class="k">import</span> <span class="n">zopen</span><span class="p">,</span> <span class="n">reverse_readline</span>
 <span class="k">with</span> <span class="n">zopen</span><span class="p">(</span><span class="s2">&quot;myfile&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">reverse_readline</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
-        <span class="nb">print</span> <span class="n">line</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 
 <span class="c1"># A frozen dict (Immutable dict)</span>
 
@@ -266,12 +261,12 @@ follows:</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Monty : Python Made Even Easier</a></li>
-<li><a class="reference internal" href="#latest-change-log">Latest Change Log</a><ul>
+<li><a class="reference internal" href="#">Monty: Python Made Even Easier</a></li>
+<li><a class="reference internal" href="#change-log">Change Log</a><ul>
 <li><a class="reference internal" href="#v0-9-6">v0.9.6</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#installing-monty">Installing monty</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#usage">Usage</a></li>
 <li><a class="reference internal" href="#api-docs">API docs</a></li>
 <li><a class="reference internal" href="#contributing">Contributing</a></li>
