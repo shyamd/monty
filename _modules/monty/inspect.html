@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>monty.inspect &#8212; monty 0.9.6 documentation</title>
+    <title>monty.inspect &#8212; monty 0.9.7 documentation</title>
     
     <link rel="stylesheet" href="../../_static/flasky.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -14,10 +14,11 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.9.6',
+        VERSION:     '0.9.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
@@ -25,8 +26,6 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="top" title="monty 0.9.6 documentation" href="../../index.html" />
-    <link rel="up" title="Module code" href="../index.html" />
 
    
   
@@ -45,7 +44,7 @@
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">monty 0.9.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">monty 0.9.7 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li> 
       </ul>
     </div>  
@@ -66,12 +65,12 @@
 <span class="kn">from</span> <span class="nn">inspect</span> <span class="k">import</span> <span class="n">currentframe</span><span class="p">,</span> <span class="n">getframeinfo</span><span class="p">,</span> <span class="n">stack</span><span class="p">,</span> <span class="n">getouterframes</span>
 
 
-<div class="viewcode-block" id="all_subclasses"><a class="viewcode-back" href="../../monty.html#monty.inspect.all_subclasses">[docs]</a><span class="k">def</span> <span class="nf">all_subclasses</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>
+<div class="viewcode-block" id="all_subclasses"><a class="viewcode-back" href="../../monty.html#monty.inspect.all_subclasses">[docs]</a><span class="k">def</span> <span class="nf">all_subclasses</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Given a class `cls`, this recursive function returns a list with</span>
 <span class="sd">    all subclasses, subclasses of subclasses, and so on.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">subclasses</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="n">__subclasses__</span><span class="p">()</span> 
+    <span class="n">subclasses</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">__subclasses__</span><span class="p">()</span> 
     <span class="k">return</span> <span class="n">subclasses</span> <span class="o">+</span> <span class="p">[</span><span class="n">g</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">subclasses</span> <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">all_subclasses</span><span class="p">(</span><span class="n">s</span><span class="p">)]</span></div>
 
 
@@ -116,13 +115,13 @@
     <span class="c1"># `modname` can be None when frame is executed directly in console</span>
     <span class="c1"># TODO(techtonik): consider using __main__</span>
     <span class="k">if</span> <span class="n">module</span><span class="p">:</span>
-        <span class="n">name</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">module</span><span class="o">.</span><span class="n">__name__</span><span class="p">)</span>
+        <span class="n">name</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">module</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
     <span class="c1"># detect classname</span>
     <span class="k">if</span> <span class="s1">&#39;self&#39;</span> <span class="ow">in</span> <span class="n">parentframe</span><span class="o">.</span><span class="n">f_locals</span><span class="p">:</span>
         <span class="c1"># I don&#39;t know any way to detect call from the object method</span>
         <span class="c1"># XXX: there seems to be no way to detect static method call - it will</span>
         <span class="c1">#      be just a function call</span>
-        <span class="n">name</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">parentframe</span><span class="o">.</span><span class="n">f_locals</span><span class="p">[</span><span class="s1">&#39;self&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span><span class="p">)</span>
+        <span class="n">name</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">parentframe</span><span class="o">.</span><span class="n">f_locals</span><span class="p">[</span><span class="s1">&#39;self&#39;</span><span class="p">]</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
     <span class="n">codename</span> <span class="o">=</span> <span class="n">parentframe</span><span class="o">.</span><span class="n">f_code</span><span class="o">.</span><span class="n">co_name</span>
     <span class="k">if</span> <span class="n">codename</span> <span class="o">!=</span> <span class="s1">&#39;&lt;module&gt;&#39;</span><span class="p">:</span>  <span class="c1"># top level usually</span>
         <span class="n">name</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">codename</span> <span class="p">)</span> <span class="c1"># function or a method</span>
